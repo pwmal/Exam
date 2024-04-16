@@ -115,7 +115,7 @@
                 DBCON.SQLtoDB($"SELECT * FROM requests WHERE user_id = '{f1.id}'");
                 for(int i = 0; i < DBCON.dt.Rows.Count; i++) 
                 {
-                    textBox9.Text += $"Направление: {DBCON.dt.Rows[i][10]} Дата: {DBCON.dt.Rows[i][14]} Статус: {DBCON.dt.Rows[i][13]}" + Environment.NewLine;
+                    textBox9.Text += $"Дата: {DBCON.dt.Rows[i][14]} Статус: {DBCON.dt.Rows[i][13]} Комментарий: {DBCON.dt.Rows[i][12]} " + Environment.NewLine;
                 }
             }
         }
